@@ -1,0 +1,450 @@
+/*----------------------------------------------     
+    CSS INDEX
+    ===================
+	1. Default
+	2. Welcome area
+	3. Amount area
+	4. Our Plan Area
+	5. Blog area
+	6. Contact area
+	7. Footer Section
+    	
+---------------------------------------------------*/
+/*-------------------------------------------------*/
+
+/*    1.    Default CSS
+/*-------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+main {
+  height: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #707070;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #121212;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0 0 25px;
+}
+h3.section-title {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: bold;
+}
+a {
+  color: #ffeeee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff5959;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #ff5959;
+  text-decoration: none;
+}
+
+.section,
+header,
+footer {
+  position: relative;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 20px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  display: inline-block;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.btn-pink {
+  color: #fff;
+  background: #ff5959;
+  border: 1px solid transparent;
+}
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active,
+ul.amount li:hover,
+ul.amount li:focus,
+ul.amount li:active {
+  color: #ff5959;
+  background: #ffeeee;
+  border: 1px solid #ff5959;
+}
+.slide-bg {
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: attachment;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.overlay.black {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+20,0.8+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+}
+/*-------------------------------------------------*/
+
+/*    2.    Wecome Area
+/*-------------------------------------------------*/
+.section.welcome-area {
+  height: 100%;
+  width: 100%;
+}
+
+.welcome-area .section-header {
+  position: relative;
+  padding: 0 165px;
+  text-align: center;
+}
+.slide-title {
+  color: #fff;
+  font-size: 65px;
+  line-height: 75px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.slide-description {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 90px;
+}
+/*-------------------------------------------------*/
+
+/*    3.    Amount Area
+/*-------------------------------------------------*/
+.section.amount-area,
+.section.contact-area,
+.section.our-plan-area {
+  margin-top: 140px;
+}
+.amount-area .section-header,
+.our-plan-area .section-header,
+.contact-area .section-header {
+  text-align: center;
+  padding: 0 165px;
+}
+.amount-area .section-description {
+  color: reset;
+}
+.section-description {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 90px;
+}
+.amount-form {
+  text-align: center;
+}
+ul.amount {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+ul.amount li {
+  list-style: none;
+  height: 125px;
+  width: 135px;
+  background: #fafafa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #707070;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  border: 1px solid transparent;
+}
+input#custom_amount.custom-amount:focus {
+  outline: none;
+  border: 1px solid #ff5959;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+input.custom-amount {
+  height: 56px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #dadada;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto 25px;
+}
+input.custom-amount::-webkit-input-placeholder {
+  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.custom-amount:-moz-placeholder {
+  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.custom-amount::-moz-placeholder {
+  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.custom-amount:-ms-input-placeholder {
+  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*-------------------------------------------------*/
+
+/*    4.    Our Plan Area
+/*-------------------------------------------------*/
+.section-content-area {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+.section-content {
+  padding: 60px 25px;
+}
+.section-content.green {
+  background: #edf5f6;
+}
+.section-content.pink {
+  background: #ffeeee;
+}
+.section-content.yellow {
+  background: #fff4d6;
+}
+.section-content h2 {
+  margin-bottom: 30px;
+}
+.section-content img {
+  margin-bottom: 35px;
+}
+/*-------------------------------------------------*/
+
+/*    5.    Blog Area
+/*-------------------------------------------------*/
+.section.blog-area {
+  margin-top: 140px;
+}
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 105px;
+  margin-bottom: 100px;
+}
+.blog:last-of-type {
+  margin-bottom: 0;
+}
+.blog img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.blog-content {
+  width: 470px;
+}
+/*-------------------------------------------------*/
+
+/*    6.    Contact Area
+/*-------------------------------------------------*/
+
+form.subscribe {
+  padding: 80px 0;
+  background: #fff4d6;
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form.subscribe input.btn {
+  cursor: pointer;
+  -moz-top-right-radius: 5px;
+  -webkit-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  -moz-bottom-right-radius: 5px;
+  -webkit-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  -moz-bottom-left-radius: 0;
+  -webkit-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  -moz-top-left-radius: 0;
+  -webkit-top-left-radius: 0;
+  border-top-left-radius: 0;
+}
+input.subscribe {
+  padding: 23px 25px;
+  font-size: 20px;
+  background: #d9d9d9;
+  border: 1px solid #d9d9d9;
+
+  -moz-top-left-radius: 5px;
+  -webkit-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+  -moz-bottom-left-radius: 5px;
+  -webkit-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  -moz-bottom-right-radius: 0;
+  -webkit-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  -moz-top-right-radius: 0;
+  -webkit-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+input.subscribe:focus {
+  outline: none;
+  border: 1px solid #ff5959;
+}
+input.subscribe::-webkit-input-placeholder {
+  color: #aa9f9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.subscribe:-moz-placeholder {
+  color: #aa9f9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.subscribe::-moz-placeholder {
+  color: #aa9f9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+input.subscribe:-ms-input-placeholder {
+  color: #aa9f9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+/*-------------------------------------------------*/
+
+/*    7.    Footer Area
+/*-------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 50px 0;
+  background: #0b0d17;
+}
+footer h3 {
+  color: #ff5959;
+  font-style: italic;
+  font-size: 38px;
+  font-size: 45px;
+}
+footer p {
+  color: #bfc1c7;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
